@@ -19,6 +19,8 @@ public class question_2 {
 		System.out.println("Enter amount of years: ");
 		int years = input.nextInt();
 		
+		input.close();
+		
 		int tot = current - (deaths * years) + (births * years) + (immigrants * years);
 		
 		// Display result

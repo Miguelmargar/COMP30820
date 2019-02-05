@@ -17,7 +17,8 @@ public class question_4 {
 		
 		double t = 35.74 + (0.6215 * temp) - (35.75 * v) + (0.4275 * temp * v);
 		
-	
+		input.close();
+		
 		// Display result
 		System.out.println("Total is: " + t );
 		

@@ -16,6 +16,7 @@ public class question_5 {
 		System.out.println("Enter price per gallon: ");
 		double price = input.nextDouble();
 		
+		input.close();
 		
 		double cost = distance / fuel * price;
 				

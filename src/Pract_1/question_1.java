@@ -15,9 +15,9 @@ public class question_1 {
 		System.out.println("Enter the Length: ");
 		double length = input.nextDouble();
 		
+		input.close();
 		
-		
-		double area = radius * radius * 3.14159;
+		double area = radius * radius * Math.PI;
 		double volume = area * length;
 		
 		// Display result

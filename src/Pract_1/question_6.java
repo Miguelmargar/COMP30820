@@ -10,6 +10,8 @@ public class question_6 {
 		System.out.println("Enter number up to three digits: ");
 		int num = input.nextInt();
 		
+		input.close();
+		
 		int first = num / 100;
 		int second = num / 10 % 10;
 		int last = num % 10;

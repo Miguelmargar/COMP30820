@@ -19,6 +19,7 @@ public class question_3 {
 	System.out.println("Enter y2: ");
 	double y2 = input.nextDouble();
 	
+	input.close();
 	
 	double a = Math.pow(x1, y1);
 	double b = Math.pow(x2, y2);

@@ -1,27 +1,22 @@
 package Pract_2;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Question_3 {
 	public static void main(String[] args) {
-		// Create a Scanner object
+		// Read coordinates
 		Scanner input = new Scanner(System.in);
-		
-		System.out.println("Enter value for X: ");
-		int x = input.nextInt();
-		
-		System.out.println("Enter value for Y: ");
-		int y = input.nextInt();
-		
-		int limit_x = 10;
-		int limit_y = 5;
-		
-		if (x <= limit_x && y <= limit_y) {
-			System.out.println("X and Y are within the limit");
-		} else {
-			System.out.println("X or Y or both are NOT with in the limit");
-		}
+		System.out.print("Enter the x and y coordinates of a point: ");
+		double x = input.nextDouble();
+		double y = input.nextDouble();
 
+		// Perform tests and display results
+		if (Math.abs(x) <= 5 && Math.abs(y) <= 2.5)
+			System.out.println("Point (" + x + ", " + y + ") is in the rectangle");
+		else
+			System.out.println("Point (" + x + ", " + y + ") is not in the rectangle");
 		
+		// Close the Scanner
+		input.close();
 	}
 }

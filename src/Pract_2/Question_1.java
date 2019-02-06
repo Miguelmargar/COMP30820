@@ -1,31 +1,27 @@
 package Pract_2;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Question_1 {
 	public static void main(String[] args) {
-		// Create a Scanner object
+		// Read three lengths
 		Scanner input = new Scanner(System.in);
-		
-		System.out.println("Enter length number one of triangle: ");
-		int num1 = input.nextInt();
-		
-		System.out.println("Enter length number two of triangle: ");
-		int num2 = input.nextInt();
-		
-		System.out.println("Enter length number three of triangle: ");
-		int num3 = input.nextInt();
-		
-		int perimeter = 0;
-		
-		if ((num1 + num2) > num3 && (num2 + num3) > num1 && (num1 + num3) > num2) {
-			perimeter = num1 + num2 + num3; 
-			System.out.println(perimeter);
-		} else {
-			System.out.println("invalid inputs");
-		}
-		
+		System.out.print("Enter the lengths of the three sides of a triangle: ");
+		double l1 = input.nextDouble();
+		double l2 = input.nextDouble();
+		double l3 = input.nextDouble();
 
+		// Validate the inputs
+		boolean isValid = l1 + l2 > l3 &&
+				l1 + l3 > l2 && l2 + l3 > l1;
+
+		// Display results
+		if (isValid)
+			System.out.println("The perimeter is " + (l1 + l2 + l3));
+		else
+			System.out.println("Input is invalid");
 		
-	}
+		// Close the Scanner
+		input.close();
+	} 
 }

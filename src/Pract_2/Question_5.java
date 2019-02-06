@@ -1,23 +1,26 @@
 package Pract_2;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Question_5 {
 	public static void main(String[] args) {
-		// Create a Scanner object
+		// Read a character
 		Scanner input = new Scanner(System.in);
-		
-		System.out.println("Enter letter: ");
+		System.out.print("Enter a lowercase or uppercase letter: ");
 		char ch = input.next().charAt(0);
-		
-		if (ch >= 'a' && ch <= 'z') {
-			System.out.println("The letter is lower case");
-		} else if (ch >= 'A' && ch <= 'Z') {
-			System.out.println("The letter is upper case");
-		} else {
-			System.out.println("Wrong input, it needs to be a letter");
-		}
 
+		// Check if ch is either a lowercase or uppercase letter
+		if (Character.isLowerCase(ch) || Character.isUpperCase(ch)) {
+			// First convert ch to lowercase and then check if it is a vowel 
+			char lower = Character.toLowerCase(ch);
+			boolean isVowel = lower == 'a' || lower == 'e' || lower == 'i' || lower == 'o' || lower == 'u';
+			
+			// Display results
+			System.out.println(ch + " is a " + (isVowel ? "vowel" : "consonant"));
+		} else // Invalid input entered 
+			System.out.println(ch + " is an invalid input");
 		
+		// Close the Scanner
+		input.close();
 	}
 }

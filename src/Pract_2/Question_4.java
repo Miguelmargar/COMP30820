@@ -1,21 +1,25 @@
 package Pract_2;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Question_4 {
 	public static void main(String[] args) {
-		// Create a Scanner object
+		// Read a number
 		Scanner input = new Scanner(System.in);
-		
-		System.out.println("Enter value: ");
-		int x = input.nextInt();
-		
-		if (x >= 0 && x <= 15) {
-			System.out.println(Integer.toHexString(x));
-		} else {
-			System.out.println("number needs to be between 0 and 15 inclusive");
-		}
+		System.out.print("Enter an integer value (0 to 15): ");
+		int number = input.nextInt();
 
+		// Check if number is valid
+		if (number < 0 || number > 15)
+			System.out.println(number + " is an invalid input");
+		else if (number < 10) // If number < 10, display number
+			System.out.println("The hex value is " + number);
+		else { // If number >= 10, display corresponding letter
+			char hex = (char)('A' + number - 10);
+			System.out.println("The hex value is " + hex);
+		}
 		
+		// Close the Scanner
+		input.close();
 	}
 }

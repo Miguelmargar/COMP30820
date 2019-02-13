@@ -9,7 +9,9 @@ public class Question_5b {
 		System.out.print("Enter the required size: ");
 		int n = input.nextInt();
 			
+//		loop with i for the amount of rows
 		for (int i = n; i > 0; i-- ) {
+//			loop with j to populate each row for each i 
 			for ( int j = 1; j <= i; j++ ) {
 				System.out.print(j + " ");
 			}

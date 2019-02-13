@@ -9,10 +9,13 @@ public class Question_5c {
 		System.out.print("Enter the required size: ");
 		int n = input.nextInt();
 			
+//		loop through i to create the amount of maximum of rows
 		for (int i = 1; i <= n; i++ ) {
+//			loop with j first for each i to create the spaces 1st
 			for ( int j = 1; j <= n-i; j++ ) {
 				System.out.print("  ");
 			}
+//			loop with k then in order to populate the numbers in the necessary columns
 			for (int k = i; k >= 1; k--) {
 				System.out.print(" " + k);
 			}

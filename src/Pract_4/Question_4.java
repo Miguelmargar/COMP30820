@@ -1,3 +1,8 @@
+/*
+ * A program to demonstrate stepwise refinement - full implementation.
+ * In particular, the program determines whether or not a credit card number is valid.
+ */
+
 package Pract_4;
 
 import java.util.Scanner;
@@ -8,65 +13,71 @@ public class Question_4 {
 		// Prompt the user to enter a credit card number
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter a credit card number: ");
-		String n = input.nextLine().trim();
+		String number = input.nextLine().trim();
 
 		// Display result
-				System.out.println(isValidNumber(n) ? " is valid" : " is invalid");
-
+		System.out.println(number + (isValidNumber(number) ? " is valid" : " is invalid"));
+		
 		// Close the Scanner
 		input.close();
 	}
 
 	// Return true if the card number is valid
-	public static boolean isValidNumber(String n) {
-		return hasValidLength(n) && hasValidPrefix(n) && satisfiesMod10Check(n);
+	public static boolean isValidNumber(String number) {
+		return hasValidLength(number) && hasValidPrefix(number) && 
+				satisfiesMod10Check(number);
 	}
 
 	// Return true if the card number has between 13 and 16 digits 
-	public static boolean hasValidLength(String n) {
-		return n.length() >= 13 && n.length() >= 16;
+	public static boolean hasValidLength(String number) {
+		return number.length() >= 13 && number.length() <= 16;
 	}
 
 	// Return true if the card number has a valid prefix
-	public static boolean hasValidPrefix(String n) {
-		return n.substring(0, 1).equals("3") || n.substring(0, 1).equals("4") || n.substring(0, 2).equals("37") || n.substring(0, 1).equals("6");
+	public static boolean hasValidPrefix(String number) {
+		return number.startsWith("4") || number.startsWith("5") ||
+				number.startsWith("6") || number.startsWith("37");
 	}
 
 	// Return true if the Mod 10 check is satisfied
-	public static boolean satisfiesMod10Check(String n) {
-		return (sumOfDoubleEvenPlace(n) + sumOfOddPlace(n)) % 10 == 0;
+	public static boolean satisfiesMod10Check(String number) {
+		return (sumOfDoubleEvenPlace(number) + sumOfOddPlace(number)) % 10 == 0;
 	}
 
 	// Double every second digit from right to left and return sum
-	public static int sumOfDoubleEvenPlace(String n) {
-		int sumE = 0;
+	public static int sumOfDoubleEvenPlace(String number) {
+		int result = 0;
 
-		for (int i = n.length() -1; i >= 0; --i ) {
-			int y = n.charAt(i) - '0';
-			int x = 2 * y;
-			if (x > 9) {
-				x = getSumDigits(x);
-			}
-			sumE += x;
-			i--;
+		// Start from the second digit from right and move two positions 
+		// to the left each time around the loop
+		for (int i = number.length() - 2; i >= 0; i-=2) {
+			int n = number.charAt(i) - '0';
+			
+			// If doubling of a digit results in a two-digit number, add 
+			// up the two digits to get a single-digit number
+			result += getSumDigits(2 * n); 
 		}
-		return sumE;
+
+		//System.out.println("method sumOfDoubleEvenPlace(): " + result);
+		return result;
 	}
 
-		// Return sum of digits in odd places from right to left 
-		public static int sumOfOddPlace(String n) {
-			int sumO = 0;
-			for (int i = n.length() -1; i >= 0; i-- ) {
-				int y = n.charAt(i) - '0';
-				sumO += y;
-				i--;
-			}
-			return sumO;
-		}
+	// Return sum of digits in odd places from right to left 
+	public static int sumOfOddPlace(String number) {
+		int result = 0;
 
-		// Return this number if it is a single digit; 
-		// otherwise return the sum of the two digits 
-		public static int getSumDigits(int n) {
-			return n -9;
-		}
+		// Start from the first digit from right and move two positions 
+		// to the left each time around the loop
+		for (int i = number.length() - 1; i >= 0; i-=2)
+			result += number.charAt(i) - '0';
+
+		//System.out.println("method sumOfOddPlace(): " + result);
+		return result;
 	}
+
+	// Return this number if it is a single digit; 
+	// otherwise return the sum of the two digits 
+	public static int getSumDigits(int number) {
+		return number % 10 + number / 10;
+	}
+}

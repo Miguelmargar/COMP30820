@@ -6,11 +6,11 @@ public class question_1 {
 	public static void main(String[] args) {
 		// Create a Scanner object
 		Scanner input = new Scanner(System.in);
-		
+
 		// Prompt the user to enter area
 		System.out.println("Enter the Radius: ");
 		double radius = input.nextDouble();
-		
+
 		// Prompt the user to enter area
 		System.out.println("Enter the Length: ");
 		double length = input.nextDouble();

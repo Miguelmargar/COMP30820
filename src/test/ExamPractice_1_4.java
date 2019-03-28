@@ -2,7 +2,7 @@ package test;
 
 import java.util.Scanner;
 
-public class ExamPractice_4 {
+public class ExamPractice_1_4 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("please type temperature between −58◦F and 41◦F and wind speed greater than 2: ");

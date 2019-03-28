@@ -2,7 +2,7 @@ package test;
 
 import java.util.Scanner;
 
-public class examPractice_3 {
+public class examPractice_1_3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("please type 4 different points: ");

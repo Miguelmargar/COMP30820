@@ -2,7 +2,7 @@ package test;
 
 import java.util.Scanner;
 
-public class examPractice_5 {
+public class examPractice_1_5 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Please input Distance, Fuel efficiency in miles and price per gallon: ");

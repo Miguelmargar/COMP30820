@@ -2,7 +2,7 @@ package test;
 
 import java.util.Scanner;
 
-public class examPractice_6 {
+public class examPractice_1_6 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Please type a 3 digit interger to sum up digits: ");

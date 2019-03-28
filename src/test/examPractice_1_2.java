@@ -2,7 +2,7 @@ package test;
 
 import java.util.Scanner;
 
-public class examPractice_2 {
+public class examPractice_1_2 {
     public static void main(String[] args) {
 
         int current = 312032486;

@@ -5,27 +5,15 @@ import java.util.Scanner;
 
 public class examPracticeHangMan {
     public static void main(String[] args) {
-        String[] words = {"hello", "hell", "cool", "amphibious"};
+        String[] words = {"hello", "fine", "well", "cool", "amphibious", "super", "computer"};
         Scanner input = new Scanner(System.in);
+
+        String word = selectWord(words);
+        char[] emptyList = emptyList(words);
 
         boolean play = true;
 
         while (play) {
-
-            // Select one word from the list of words to guess
-            int index = (int)(Math.random() * words.length);
-            String word = words[index].toLowerCase();
-
-            System.out.println("word is: " + word);
-
-            // Create Array with no guesses
-            char[] result = new char[word.length()];
-            for (int i = 0; i < result.length; i++) {
-                result[i] = '_';
-            }
-
-            System.out.println("result is: " + Arrays.toString(result));
-
 
             int count = 1;
             int failed = 0;
@@ -36,9 +24,9 @@ public class examPracticeHangMan {
                 char guess = input.nextLine().toLowerCase().charAt(0);
 
                 if (isInWord(guess, word)) {
-                    newResult(result, word, guess);
+                    newResult(emptyList, word, guess);
                     System.out.println("Correct!");
-                    System.out.println("This is how it's looking so far: " + Arrays.toString(result));
+                    System.out.println("This is how it's looking so far: " + Arrays.toString(emptyList));
                     count++;
                 } else {
                     System.out.println("Wrong!");
@@ -54,17 +42,34 @@ public class examPracticeHangMan {
             // if yes continue of no quit
             if (a == 'y' || a == 'Y') {
                 play = true;
+                main(args);
             } else if (a == 'n' || a == 'N') {
                 play = false;
+                System.out.println("Good bye!");
             }
         }
 
 
 
+    }
 
+    public static String selectWord(String[] words) {
+        // Select one word from the list of words to guess
+        int index = (int)(Math.random() * words.length);
+        String word = words[index].toLowerCase();
 
+        return word;
+    }
 
+    public static char[] emptyList(String[] words) {
+        // Create Array with no guesses
+        char[] result = new char[selectWord(words).length()];
+        for (int i = 0; i < result.length; i++) {
+            result[i] = '_';
+        }
 
+        System.out.println("result is: " + Arrays.toString(result));
+        return result;
     }
 
     public static boolean isInWord(char guess, String word) {
@@ -77,7 +82,6 @@ public class examPracticeHangMan {
         }
         return is;
     }
-
 
     public static void newResult(char[] result, String word, char guess) {
         // Change "_" for the letter

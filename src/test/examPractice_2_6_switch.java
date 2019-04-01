@@ -2,7 +2,7 @@ package test;
 
 import java.util.Scanner;
 
-public class examPractice_2_6 {
+public class examPractice_2_6_switch {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

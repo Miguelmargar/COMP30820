@@ -20,21 +20,6 @@ public class Q3 {
 	// write this method
 	public static boolean isBalanced(String p) {
 
-		int countR = 0;
-		int countL = 0;
-
-		for (int i = 0; i < p.length(); i++) {
-			if (p.charAt(i) == '(') {
-				countL++;
-			}
-			if (p.charAt(i) == ')') {
-				countR++;
-			}
-		}
-		if (countL != countR) {
-			return false;
-		}
-
 		int count = 0;
 		for (int i = 0; i < p.length(); i++) {
 			if (p.charAt(i) == '(') {
@@ -47,6 +32,6 @@ public class Q3 {
 				return false;
 			}
 		}
-	return true;
+	return count == 0;
 	}
 }

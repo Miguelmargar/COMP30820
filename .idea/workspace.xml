@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4276c3ba-67bb-4d6e-856b-0f08f7319f27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Pract_7/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pract_7/CheckingAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pract_7/SavingsAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pract_7/answerQ2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pract_7/testAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pract_7/CheckingAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pract_7/CheckingAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pract_7/SavingsAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pract_7/SavingsAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pract_7/answerQ2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pract_7/answerQ2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pract_7/testAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pract_7/testAccount.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,11 +72,11 @@
         <option value="$PROJECT_DIR$/src/test_00021466/Q3.java" />
         <option value="$PROJECT_DIR$/src/test_00021466/Q2.java" />
         <option value="$PROJECT_DIR$/src/Pract_7/Question_1.java" />
+        <option value="$PROJECT_DIR$/src/Pract_7/Q2.java" />
         <option value="$PROJECT_DIR$/src/Pract_7/Account.java" />
         <option value="$PROJECT_DIR$/src/Pract_7/SavingsAccount.java" />
         <option value="$PROJECT_DIR$/src/Pract_7/testAccount.java" />
         <option value="$PROJECT_DIR$/src/Pract_7/CheckingAccount.java" />
-        <option value="$PROJECT_DIR$/src/Pract_7/Q2.java" />
         <option value="$PROJECT_DIR$/src/Pract_7/answerQ2.java" />
       </list>
     </option>
@@ -95,8 +94,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,10 +116,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554738998817" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554896922465" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/test_solutions/Q2_sol.java" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -147,7 +146,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.answerQ2">
+  <component name="RunManager" selected="Application.testAccount">
     <configuration name="Q2 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test_solutions.Q2" />
       <extension name="coverage">
@@ -213,8 +212,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.answerQ2" />
         <item itemvalue="Application.testAccount" />
+        <item itemvalue="Application.answerQ2" />
         <item itemvalue="Application.Q2" />
         <item itemvalue="Application.Q2 (1)" />
         <item itemvalue="Application.TotalArea" />
@@ -234,7 +233,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20405406" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21081081" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -591,13 +590,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/test_solutions/Q2_sol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/test_solutions/Q2_sol.java" />
     <entry file="file://$PROJECT_DIR$/src/test_00021466/Q2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="619">
@@ -612,45 +605,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pract_7/SavingsAccount.java">
+    <entry file="file://$PROJECT_DIR$/src/Pract_7/Q2.java" />
+    <entry file="file://$PROJECT_DIR$/src/Pract_7/testAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        <state relative-caret-position="154">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pract_7/CheckingAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        <state relative-caret-position="352">
+          <caret line="40" column="68" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
+          <folding>
+            <element signature="e#131#132#0" expanded="true" />
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pract_7/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="59" column="8" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="49" />
+        <state relative-caret-position="418">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding>
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1277#1278#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+            <element signature="e#1386#1387#0" expanded="true" />
+            <element signature="e#1420#1421#0" expanded="true" />
+            <element signature="e#1504#1505#0" expanded="true" />
+            <element signature="e#1560#1561#0" expanded="true" />
+            <element signature="e#1640#1641#0" expanded="true" />
+            <element signature="e#1673#1674#0" expanded="true" />
+            <element signature="e#1751#1752#0" expanded="true" />
+            <element signature="e#1784#1785#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pract_7/testAccount.java">
+    <entry file="file://$PROJECT_DIR$/src/Pract_7/SavingsAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pract_7/Q2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+        <state relative-caret-position="35">
+          <caret line="16" column="81" lean-forward="true" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pract_7/answerQ2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        <state relative-caret-position="-1496">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>

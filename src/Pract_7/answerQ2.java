@@ -13,7 +13,8 @@ public class answerQ2 {
         do {
             // Display options to users
             displayOptions(account, input);
-            if (displayOptions(account, input) == 0) break;
+            if (displayOptions(account, input) == 0)
+                break;
             } while (true);
 
         // Display a final message
